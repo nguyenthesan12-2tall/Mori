@@ -75,15 +75,20 @@ function Dashboard() {
   );
 }
 
+import { FeedbackModal } from './components/FeedbackModal';
+
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Dashboard />} />
-      <Route path="/focus" element={<FocusContainer />} />
-      <Route path="/sync" element={<SyncDashboard />} />
-      <Route path="/bank" element={<BankDashboard />} />
-      <Route path="/wisdom" element={<WisdomLibrary />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/focus" element={<FocusContainer />} />
+        <Route path="/sync" element={<SyncDashboard />} />
+        <Route path="/bank" element={<BankDashboard />} />
+        <Route path="/wisdom" element={<WisdomLibrary />} />
+      </Routes>
+      <FeedbackModal />
+    </>
   );
 }
 
