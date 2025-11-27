@@ -76,6 +76,7 @@ function Dashboard() {
 }
 
 import { FeedbackModal } from './components/FeedbackModal';
+import { MysteryCounter } from './components/MysteryCounter';
 
 function App() {
   return (
@@ -88,6 +89,7 @@ function App() {
         <Route path="/wisdom" element={<WisdomLibrary />} />
       </Routes>
       <FeedbackModal />
+      <MysteryCounter />
     </>
   );
 }
